@@ -1,0 +1,84 @@
+<!doctype html>
+
+
+<html>
+
+
+
+		<head>
+
+		<title>Array</title>	
+		
+		<script type="text/Javascript">
+		
+		
+		
+                    
+                    function validate()
+                    {
+                        var first =document.getElementById("tx1").value;
+                        var enterdcolor1 =document.getElementById("tx2").value;
+                        var enterdcolor2 =document.getElementById("tx3").value;
+						var enterdcolor3 =document.getElementById("tx4").value;
+                        
+                       
+
+                        if (first == "")
+                        {
+                            alert("Please Enter Name !");
+                            
+                            
+
+                           
+                            return false;
+                        }
+
+                       
+                        else if(enterdcolor1 == "" || enterdcolor2=="" || enterdcolor3=="")
+                        {
+                            
+							alert("please provide color.");
+                           
+                            return false;
+
+                        }
+						else
+						{
+						
+						return true;
+						
+						}
+
+                        
+
+                        
+                    }
+
+
+                </script>
+
+		
+
+		</head>
+
+
+
+		<body>
+		
+		<form onsubmit="return validate()" method="POST" action="retrive.php" >
+		
+		Enter Your Name Please:<input type="text" name="tx1" id="tx1" ><br><br>
+		Enter your favourite color 1:<input type="text" name="tx2" id="tx2"><br><br>
+		Enter your favourite color 2:<input type="text" name="tx3" id="tx3"><br><br>
+		Enter your favourite color 3:<input type="text" name="tx4" id="tx4">
+		<br>
+		
+		<Button type="submit">Submit</Button>
+		
+		
+		
+		</form>
+
+		</body>
+		
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+
+
+<html>
+
+
+	<head>
+	
+	<title>Associative Array</title>
+	<script type="text/javascript">
+	
+	
+	function check()
+	
+	
+	{
+	
+	
+	var city = document.getElementById("txt").value;
+	
+	if(city == "")
+
+	{
+
+		alert("Please Enter city name");
+		return false;
+	}	
+	else
+	{
+	
+	return true;
+	
+	}
+	
+	}
+	
+	
+	
+	
+	</script>
+	
+	
+	</head>
+	
+	
+	<body>
+	
+	<form action="associativeArray.php" onsubmit="return check()" method="POST">
+	
+	Enter City Name Please: <input type="text" name="txt" id="txt"><br>
+	<Button type="submit">Submit</Button>
+	
+	</form>
+	
+	
+	</body>
+	
+	
+	
+</html>
